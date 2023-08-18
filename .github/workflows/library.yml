@@ -26,5 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install
-    - run: npm run test:unit
+    - name: Installing NPM
+      run: npm install
+    - name: Running UNIT tests
+      run: npm run test:unit
+    - name: Displaying SoftUni name
+      run: echo 'theshadowtm'
